@@ -42,7 +42,7 @@ public final class DrawNumberControllerImpl implements DrawNumberController {
             throw new NullPointerException("There is no view attached!");
         }
         final var res = model.attempt(n);
-        for (DrawNumberView view: views){
+        for (final DrawNumberView view: views){
             view.result(res);
         }
        
